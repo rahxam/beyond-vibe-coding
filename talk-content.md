@@ -43,9 +43,9 @@ The presentation is an HTML page styled as a **VS Code window**:
 
 **What you say:**
 
-> "Hi everyone. Quick show of hands: who here has asked an AI to write CAP code this year? *(pause)* Keep your hand up if you used spec driven development. *(watch the hands drop)* That drop-off you just saw — that's this talk.
+> "Hi everyone. Quick show of hands: who here has asked an AI to write CAP code this year? *(pause)* Keep your hand up if you used spec-driven development. *(watch the hands drop)* See how many hands just went down? That gap — that's exactly what this talk is about.
 >
-> Here's the plan for the next 20 minutes: a bit of theory from me — what spec-driven development actually is and why it matters for CAP — and then Abdulbasıt builds a real CAP bookshop application live on stage. Which will either be very impressive or very entertaining. Win-win for you either way."
+> Here's the plan for the next 20 minutes: first some theory from me — what spec-driven development is and why it fits CAP so well — and then Abdulbasıt builds a real CAP bookshop application live on stage. That will either be very impressive or very entertaining. Win-win for you either way."
 
 ---
 
@@ -78,9 +78,9 @@ Bottom panel: **TERMINAL**, showing a fake prompt: `$ specify talk --audience "c
 
 **What you say:**
 
-> "Now. Before we start, a confession. I know that at this conference, slides are… let's say, *not the love language*. Code is. So I did what any reasonable developer would do — *(B1)* — I built the entire presentation to look like VS Code. Left side file explorer, terminal at the bottom, everything's a markdown file. You're not watching slides. You're *reviewing a repository*. Completely different thing.
+> "Now, before we start, I have to admit something. I know that at this conference, people don't really love slides. They love code. So I did what any reasonable developer would do — *(B1)* — I built the whole presentation to look like VS Code. File explorer on the left, terminal at the bottom, everything is a markdown file. You're not watching slides. You're *reviewing a repository*. Completely different thing.
 >
-> And for those of you where it's 4 p.m., the coffee has worn off, and even VS Code is too much right now — I've also prepared some professional-grade distraction. *(B2 — let the video run, say nothing for ~5 seconds, then:)* You're welcome. It'll be back if I see anyone yawning. *(B3)*
+> And for those of you where it's 4 p.m., the coffee has stopped working, and even VS Code is too much right now — I also prepared some professional distraction. *(B2 — let the video run, say nothing for ~5 seconds, then:)* You're welcome. It comes back if I see anyone yawning. *(B3)*
 >
 > Alright — theory. Let's go."
 
@@ -114,9 +114,9 @@ Bottom panel: **TERMINAL**, showing a fake prompt: `$ specify talk --audience "c
 
 **What you say:**
 
-> "Let's be honest. Sitting alone in a dark room, tinkering with your code — *(gesture at image)* — that was the best part of this job. And the industry has this unexplained need to destroy everything that's quiet, satisfying, and can actually make you happy.
+> "Let's be honest. Sitting alone in a dark room, quietly working on your code — *(gesture at image)* — that was the best part of this job. And our industry keeps destroying everything that is quiet, satisfying, and actually makes you happy.
 >
-> *(B1)* First: pair programming — fighting about one unimportant line of code for eight hours. *(B2)* Then test-driven development — writing tests for code that doesn't exist yet. *(B3)* Then Scrum — standups, refinements, reviews, retros… everything except developing. *(B4)* And now: Spec-Driven Development. And here's the punchline — the one thing developers hate writing more than tests is documentation. So the new hot methodology is: *write the documentation first.*
+> *(B1)* First: pair programming — fighting for eight hours about one unimportant line of code. *(B2)* Then test-driven development — writing tests for code that doesn't exist yet. *(B3)* Then Scrum — standups, refinements, reviews, retros… everything except actual development. *(B4)* And now: Spec-Driven Development. And here's the punchline — the one thing developers hate writing even more than tests is documentation. So the new hot method is: *write the documentation first.*
 >
 > Stay with me. Because unlike the others — this one might actually be fun"
 
@@ -164,13 +164,13 @@ Bottom panel: **TERMINAL**, showing a fake prompt: `$ specify talk --audience "c
 
 **What you say:**
 
-> "Quick recap. Vibe coding, term coined by Karpathy: describe what you want, surrender to the vibes, never look at the code. *(B1)* The catch: run the same prompt a hundred times, you get a hundred different architectures. It's a slot machine with a Git integration.
+> "Quick recap. Vibe coding — the term comes from Karpathy: describe what you want, trust the vibes, never look at the code. *(B1)* The problem: run the same prompt a hundred times, and you get a hundred different architectures. It's a slot machine with a Git integration.
 >
-> *(B2)* And to be fair — the slot machine pays out! For prototypes, PoCs, to-do apps, the data shows massive speed-ups. This is the Vibe Peak, and it's real.
+> *(B2)* And to be fair — the slot machine pays out! For prototypes, PoCs, to-do apps, the numbers show massive speed-ups. This is the Vibe Peak, and it's real.
 >
-> *(B3 — let the problems flood in, wait a beat)* …and this is what happens when you point the same approach at a real system. Multi-tenancy, draft handling, authorization, an S/4 integration. I call it the Complexity Trough: productivity drops *below* doing it yourself. This isn't a feeling — METR ran a randomized controlled trial: experienced developers on mature codebases were 19% *slower* with AI. And here's the kicker: they *believed* they'd been 20% faster. Because the AI one-shots a hallucination into your codebase in three seconds — and you debug it for three hours.
+> *(B3 — let the problems flood in, wait a beat)* …and this is what happens when you use the same approach on a real system. Multi-tenancy, draft handling, authorization, an S/4 integration. I call it the Complexity Trough: your productivity drops *below* doing it yourself. And this is not just a feeling — METR did a controlled study: experienced developers on mature codebases were 19% *slower* with AI. And the best part: they *believed* they had been 20% faster. Because the AI writes a hallucination into your codebase in three seconds — and you spend three hours debugging it.
 >
-> The root cause: English only *feels* precise. 'Customers can order books' — lovely. What happens when two customers order the *last copy* at the same moment — and one request times out mid-transaction? *That's* where real engineering lives. And vibes don't cover it."
+> The root cause: English only *feels* precise. 'Customers can order books' — sounds nice. But what happens when two customers order the *last copy* at the same moment — and one request times out in the middle of the transaction? *That's* where real engineering happens. And vibes don't cover it."
 
 ---
 
@@ -200,11 +200,11 @@ Bottom panel: **TERMINAL**, showing a fake prompt: `$ specify talk --audience "c
 
 **What you say:**
 
-> "So here's the flip. You don't start with code — you start with a precise, structured document: what you're building, why, the constraints, what success looks like. And this spec isn't documentation *about* the system. It *is* the system's source of truth — the code is just its compilation target.
+> "So here's the flip. You don't start with code — you start with a precise, structured document: what you're building, why, the constraints, and what success looks like. And this spec is not documentation *about* the system. It *is* the system's source of truth — the code is just its compilation target.
 >
-> *(B1)* I hear you: 'We've always had specs. They're called PRDs and they die in Confluence.' True. Traditionally the spec is an afterthought — you write it, feel good about yourself, file it, and it rots. The difference now: the spec isn't for humans to ignore. It's an execution contract for an AI agent. And the agent doesn't get bored, doesn't skip ahead, doesn't say 'I'll update the docs later.' *(B2)*
+> *(B1)* I know what you're thinking: 'We've always had specs. They're called PRDs, and they die in Confluence.' True. Traditionally, the spec comes last — you write it, feel good about it, save it somewhere, and nobody ever reads it again. The difference now: the spec is not written for humans to ignore. It's an execution contract for an AI agent. And the agent doesn't get bored, doesn't skip steps, doesn't say 'I'll update the docs later.' *(B2)*
 >
-> If this sounds like the software development lifecycle you already know — requirements, design, tasks, implementation — that's because it is. The only new thing: the tasks get handed to an agent instead of the poor dev."
+> If this sounds like the software development lifecycle you already know — requirements, design, tasks, implementation — that's because it is. The only new thing: the tasks go to an agent instead of the poor developer."
 
 ---
 
@@ -243,19 +243,19 @@ Bottom panel: **TERMINAL**, showing a fake prompt: `$ specify talk --audience "c
 
 **What you say:**
 
-> "So how does it work concretely? One workflow, five artifacts — all markdown files in your repo, all versioned, all reviewed by you before anything moves on.
+> "So how does it work in practice? One workflow, five artifacts — all markdown files in your repo, all versioned, all reviewed by you before the next step starts.
 >
-> *(B1)* Step zero, once per project: the **constitution**. Your team's non-negotiable laws. Everything is CDS, no ORMs. The domain model is never exposed directly. Every service requires a role. No handler without a test. This is the implicit knowledge you normally transfer through three years of code-review pain — made explicit. Every later step is checked against it.
+> *(B1)* Step zero, once per project: the **constitution**. Your team's fixed rules — not up for discussion. Everything is CDS, no ORMs. The domain model is never exposed directly. Every service needs a role. No handler without a test. This is the knowledge you normally teach through three years of painful code reviews — now written down. Every later step is checked against it.
 >
-> *(B2)* Then, per feature: **specify**. What and why — user stories, acceptance criteria, edge cases. Deliberately no tech stack yet. This is where you catch the last-copy questions *before* they're bugs.
+> *(B2)* Then, for each feature: **specify**. What and why — user stories, acceptance criteria, edge cases. On purpose: no tech stack yet. This is where you catch the last-copy questions *before* they become bugs.
 >
-> *(B3)* **Plan**: now the how. Entities, service projections, annotations — and the agent validates its own plan against the constitution. If the plan says 'let's add MongoDB', the constitution says no.
+> *(B3)* **Plan**: now the how. Entities, service projections, annotations — and the agent checks its own plan against the constitution. If the plan says 'let's add MongoDB', the constitution says no.
 >
-> *(B4)* **Tasks**: the plan gets shredded into atomic work items, each traceable back to a requirement, each independently verifiable. These are basically Jira tickets — except they're useful, in markdown, and nobody has to groom them on a Tuesday afternoon.
+> *(B4)* **Tasks**: the plan gets broken down into small, atomic work items — each one linked to a requirement, each one you can verify on its own. Basically Jira tickets — except they're useful, they're in markdown, and nobody has to groom them on a Tuesday afternoon.
 >
-> *(B5)* And only now: **implement**. The agent executes task by task, and you review small diffs against a contract — instead of 3,000 lines against a vibe. And the crucial part: at every step there's a *human gate*. You edit the spec, you correct the plan, you reorder the tasks. It's not waterfall — if reality disagrees, you update the spec and keep going. The spec stays alive.
+> *(B5)* And only now: **implement**. The agent works through the tasks one by one, and you review small diffs against a contract — instead of 3,000 lines against a vibe. And the important part: at every step there's a *human gate*. You edit the spec, you correct the plan, you reorder the tasks. It's not waterfall — if reality turns out different, you update the spec and keep going. The spec stays alive.
 >
-> By the way — the step names vary by tool. Spec Kit, which we'll use in the demo, Kiro, OpenSpec — different commands, same workflow. Don't marry the tool, marry the discipline."
+> By the way — the step names are different in every tool. Spec Kit, which we'll use in the demo, Kiro, OpenSpec — different commands, same workflow. Don't marry the tool, marry the discipline."
 
 ---
 
@@ -287,11 +287,11 @@ Bottom panel: **TERMINAL**, showing a fake prompt: `$ specify talk --audience "c
 
 **What you say:**
 
-> "Now the part where you get to feel smug. While the JavaScript world is having an existential crisis about specs — you've been writing them since 2018. It's called CDS.
+> "And now the part where you can feel a little proud of yourselves. While the JavaScript world is having an existential crisis about specs — you've been writing specs since 2018. It's called CDS.
 >
-> *(B1)* Think about it: a CDS model *is* a specification. Declarative. Entities, services, authorization, UI behavior — decoupled from database and protocol. *(B2)* When you write `@odata.draft.enabled`, you're not implementing draft handling — you're *declaring* it. In most stacks there's a huge gap between spec-in-English and code-in-imperative-logic. In CAP, the spec and half the implementation are structurally the same artifact. An AI generating CDS isn't coding from a spec — it's translating one spec into a slightly more formal one. Much shorter jump, much less to hallucinate.
+> *(B1)* Think about it: a CDS model *is* a specification. Declarative. Entities, services, authorization, UI behavior — independent of database and protocol. *(B2)* When you write `@odata.draft.enabled`, you're not implementing draft handling — you're *declaring* it. In most stacks, there's a big gap between the spec in English and the code in imperative logic. In CAP, the spec and half of the implementation are structurally the same artifact. An AI that generates CDS is not coding from a spec — it's translating one spec into a slightly more formal one. A much shorter jump, and much less room to hallucinate.
 >
-> *(B3)* One honest caveat, and then we build: SDD fixes *intent* — it does not fix *knowledge*. A perfect spec plus a model that barely knows CAP still gives you a very well-organized pile of wrong code. Deterministically wrong instead of randomly wrong — not the upgrade you wanted. The fix: give the agent live context. SAP ships an official CAP MCP server — the agent queries your *actual* compiled CDS model and the *current* capire docs instead of its 2023 memories. One config entry. Do it before you do anything else."
+> *(B3)* One honest warning, and then we build: SDD fixes *intent* — it does not fix *knowledge*. A perfect spec plus a model that barely knows CAP still gives you a very well-organized pile of wrong code. Deterministically wrong instead of randomly wrong — not the upgrade you wanted. The fix: give the agent live context. SAP ships an official CAP MCP server — the agent reads your *actual* compiled CDS model and the *current* capire docs, instead of its memories from 2023. One config entry. Do this before anything else."
 
 *(⏱️ If you're behind schedule: cut B3 and the last paragraph — 25 sec saved. The abstract promise on MCP is then covered only if the co-speaker shows the config in the demo. If you're comfortably on time, keep it.)*
 
@@ -318,7 +318,7 @@ Bottom panel: **TERMINAL**, showing a fake prompt: `$ specify talk --audience "c
 
 **What you say:**
 
-> "Enough theory. There's exactly one way to prove any of this works, and that's doing it live, in front of all of you, on conference Wi-Fi. Every file you just saw appear in this fake explorer — you'll now see generated for real. [Co-speaker name], the stage is yours."
+> "Enough theory. There's exactly one way to prove that any of this works: live, in front of all of you, on conference Wi-Fi. Every file you just saw appear in this fake explorer — you will now see generated for real. [Co-speaker name], the stage is yours."
 
 ---
 
@@ -354,9 +354,9 @@ Bottom panel: **TERMINAL**, showing a fake prompt: `$ specify talk --audience "c
 
 **What you say:**
 
-> "Four things to take home. Vibes don't scale — great for prototypes, fatal for enterprise. It's the workflow that matters, not the tool — constitution, specify, plan, tasks, implement, with a human gate at every step. CAP is uniquely positioned, because CDS has been a machine-readable spec all along. And finally: notice what stayed human in that demo — understanding the problem, defining the constraints, reviewing the plan. The AI executes the contract. *You* write it. That's not the death of software engineering — that's software engineering with the boring parts delegated. Thank you!"
+> "Four things to take home. Vibes don't scale — great for prototypes, fatal for enterprise. The workflow matters, not the tool — constitution, specify, plan, tasks, implement, with a human gate at every step. CAP is in a perfect position, because CDS has been a machine-readable spec all along. And finally: look at what stayed human in this demo — understanding the problem, defining the constraints, reviewing the plan. The AI executes the contract. *You* write it. That's not the end of software engineering — that's software engineering with the boring parts delegated. Thank you!"
 
-*(⚠️ If the demo had to fall back to the prepared repo, swap the opener of takeaway 4: "notice what stayed human — even when the Wi-Fi didn't: understanding the problem, defining the constraints, reviewing the plan.")*
+*(⚠️ If the demo had to fall back to the prepared repo, swap the opener of takeaway 4: "look at what stayed human — even when the Wi-Fi didn't: understanding the problem, defining the constraints, reviewing the plan.")*
 
 ---
 

@@ -6,13 +6,13 @@
 
 ## 1 · Title — 0:30
 
-- Show of hands: **AI für CAP-Code dieses Jahr?** → Hand oben lassen: **wer nutzt SDD?** → Hände sinken: **"That drop-off you just saw — that's this talk"**
+- Show of hands: **AI für CAP-Code dieses Jahr?** → Hand oben lassen: **wer nutzt SDD?** → Hände sinken: **"That gap — that's exactly what this talk is about"**
 - Plan: Theorie (ich) → **Abdulbasıt baut Bookshop live**
 - "Very impressive or very entertaining — **win-win either way**"
 
 ## 2 · Reveal — 0:45 (cum. 1:15)
 
-- Confession: slides are **not the love language** here — code is
+- Confession: **"people here don't really love slides — they love code"**
 - *(B1)* → VS Code-Verwandlung: "You're not watching slides, you're **reviewing a repository**"
 - *(B2)* Subway Surfer PiP → **~5 Sek. NICHTS sagen** → "You're welcome. It'll be back if I see anyone yawning" *(B3)*
 - "Alright — theory. Let's go."
@@ -20,7 +20,7 @@
 ## 3 · Ruining Joy — 0:45 (cum. 2:00)
 
 - Dunkler Keller = **the best part of this job** — Industrie zerstört alles Schöne
-- *(B1)* Pair Programming ("8 hours fighting about one line") → *(B2)* TDD → *(B3)* Scrum ("everything except developing")
+- *(B1)* Pair Programming ("8 hours fighting about one line") → *(B2)* TDD → *(B3)* Scrum ("everything except actual development")
 - *(B4)* SDD-Punchline: Devs hassen Doku noch mehr als Tests → neue Methode = **"write the documentation first"**
 - "Stay with me — this one might actually be fun"
 
@@ -50,7 +50,7 @@
 
 ## 7 · CAP — 1:00 (cum. 6:30)
 
-- **"Now the part where you get to feel smug"** — CAP macht SDD **seit 2018: CDS** → Lacher abwarten!
+- **"Now the part where you can feel a little proud of yourselves"** — CAP macht SDD **seit 2018: CDS** → Lacher abwarten!
 - *(B1)* CDS **ist** eine Spec: deklarativ, entkoppelt
 - *(B2)* `@odata.draft.enabled` = **declaring, not implementing** → "translating one spec into a slightly more formal one" → weniger Halluzination
 - *(B3)* Caveat: SDD fixt **intent, nicht knowledge** → "deterministically wrong is not the upgrade you wanted" → **CAP MCP server**, one config entry
