@@ -37,15 +37,15 @@ The presentation is an HTML page styled as a **VS Code window**:
 > **Beyond Vibe Coding**
 > Engineering Deterministic CAP Applications with Spec-Driven Development
 >
-> [Your name] · [Co-speaker name] — CodeConnect 2026
+> Abdulbasıt Gülşen  Maximilian Hartig — CodeConnect 2026
 
 **Builds:** none. Static slide.
 
 **What you say:**
 
-> "Hi everyone. Quick show of hands: who here has asked an AI to write CAP code this year? *(pause)* Keep your hand up if it confidently gave you OData V2 syntax. *(pause)* Yeah. That's why we're here.
+> "Hi everyone. Quick show of hands: who here has asked an AI to write CAP code this year? *(pause)* Keep your hand up if you used spec driven development.
 >
-> Here's the plan for the next 20 minutes: a bit of theory from me — what spec-driven development actually is and why it matters for CAP — and then [co-speaker name] builds a real CAP application live on stage, from zero. Which will either be very impressive or very entertaining. Win-win for you either way."
+> Here's the plan for the next 20 minutes: a bit of theory from me — what spec-driven development actually is and why it matters for CAP — and then Abdulbasıt builds a real CAP bookshop application live on stage. Which will either be very impressive or very entertaining. Win-win for you either way."
 
 ---
 
@@ -80,7 +80,7 @@ Bottom panel: **TERMINAL**, showing a fake prompt: `$ specify talk --audience "c
 
 > "Now. Before we start, a confession. I know that at this conference, slides are… let's say, *not the love language*. Code is. So I did what any reasonable developer would do — *(B1)* — I built the entire presentation to look like VS Code. Left side file explorer, terminal at the bottom, everything's a markdown file. You're not watching slides. You're *reviewing a repository*. Completely different thing.
 >
-> And for those of you where it's 4 p.m., the coffee has worn off, and even VS Code is too much right now — I've also prepared some professional-grade distraction. *(B2 — let the video run, say nothing for ~5 seconds, then:)* That's Subway Surfers. In CAP optics. You're welcome. It'll be back if I see anyone yawning. *(B3)*
+> And for those of you where it's 4 p.m., the coffee has worn off, and even VS Code is too much right now — I've also prepared some professional-grade distraction. *(B2 — let the video run, say nothing for ~5 seconds, then:)* You're welcome. It'll be back if I see anyone yawning. *(B3)*
 >
 > Alright — theory. Let's go."
 
@@ -118,7 +118,7 @@ Bottom panel: **TERMINAL**, showing a fake prompt: `$ specify talk --audience "c
 >
 > *(B1)* First: pair programming. *(B2)* Then test-driven development — writing tests for code that doesn't exist yet. *(B3)* Then Scrum — standups, refinements, reviews, retros… everything except developing. *(B4)* And now: Spec-Driven Development. And here's the punchline — the one thing developers hate writing more than tests is documentation. So the new hot methodology is: *write the documentation first.*
 >
-> Stay with me. Because unlike the others — this one might actually be for *us*, not for management."
+> Stay with me. Because unlike the others — this one might actually be fun"
 
 ---
 
