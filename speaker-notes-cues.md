@@ -6,7 +6,7 @@
 
 ## 1 · Title — 0:30
 
-- Show of hands: **AI für CAP-Code dieses Jahr?** → Hand oben lassen: **wer nutzt SDD?**
+- Show of hands: **AI für CAP-Code dieses Jahr?** → Hand oben lassen: **wer nutzt SDD?** → Hände sinken: **"That drop-off you just saw — that's this talk"**
 - Plan: Theorie (ich) → **Abdulbasıt baut Bookshop live**
 - "Very impressive or very entertaining — **win-win either way**"
 
@@ -20,7 +20,7 @@
 ## 3 · Ruining Joy — 0:45 (cum. 2:00)
 
 - Dunkler Keller = **the best part of this job** — Industrie zerstört alles Schöne
-- *(B1)* Pair Programming → *(B2)* TDD → *(B3)* Scrum ("everything except developing")
+- *(B1)* Pair Programming ("8 hours fighting about one line") → *(B2)* TDD → *(B3)* Scrum ("everything except developing")
 - *(B4)* SDD-Punchline: Devs hassen Doku noch mehr als Tests → neue Methode = **"write the documentation first"**
 - "Stay with me — this one might actually be fun"
 
@@ -29,8 +29,8 @@
 - Karpathy: prompt, generate, **pray**, repeat
 - *(B1)* 100 Runs → 100 Architekturen = **"slot machine with a Git integration"**
 - *(B2 — Kurve hoch)* Fair: **the slot machine pays out!** Prototypen/To-do-Apps → Vibe Peak ist real
-- *(B3 — Absturz + Problems fluten, Beat warten)* Reales System → **Complexity Trough** (DORA 2026): 3 Sek. halluzinieren, **3 Stunden debuggen**
-- Root cause: **"English only *feels* precise"** → Wi-Fi-flicker-Beispiel
+- *(B3 — Absturz + Problems fluten, Beat warten)* Reales System → **Complexity Trough** (METR-RCT: **19 % langsamer**, gefühlt 20 % schneller): 3 Sek. halluzinieren, **3 Stunden debuggen**
+- Root cause: **"English only *feels* precise"** → Last-copy-Beispiel (2 Kunden, letztes Exemplar, Timeout mid-transaction)
 
 ## 5 · The Flip — 0:45 (cum. 4:00)
 
@@ -42,7 +42,7 @@
 
 - Ein Workflow, **5 Artefakte, alles Markdown, alles reviewed by YOU**
 - *(B1)* **Constitution** — non-negotiable laws (CDS only, kein db/-Expose, @requires, Tests) = "3 Jahre Code-Review-Schmerz, explizit gemacht"
-- *(B2)* **Specify** — WHAT & WHY, kein Tech-Stack → Wi-Fi-flicker-Fragen VOR den Bugs
+- *(B2)* **Specify** — WHAT & WHY, kein Tech-Stack → Last-copy-Fragen VOR den Bugs
 - *(B3)* **Plan** — HOW, gegen Constitution validiert → "MongoDB? Constitution says no"
 - *(B4)* **Tasks** — atomar, traceable = "Jira tickets, except they're useful"
 - *(B5)* **Implement** — "review **small diffs against a contract**, not 3,000 lines against a vibe" → **human gate at every step**, Spec bleibt lebendig
@@ -68,6 +68,7 @@
 - *(B2)* **Workflow, not the tool** — human gate at every step
 - *(B3)* **CAP is SDD-native** — CDS war Spec, bevor es cool war
 - *(B4)* **You're still the engineer** — "AI executes the contract. *You* write it." → "boring parts delegated" → **Thank you!**
+- ⚠️ Demo im Fallback gelaufen? B4-Opener tauschen: **"what stayed human — even when the Wi-Fi didn't"**
 
 ---
 

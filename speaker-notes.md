@@ -6,7 +6,7 @@
 
 ## Slide 1 — Title (0:30 · cum. 0:30)
 
-> Hi everyone. Quick show of hands: who here has asked an AI to write CAP code this year? *(pause)* Keep your hand up if you used spec driven development.
+> Hi everyone. Quick show of hands: who here has asked an AI to write CAP code this year? *(pause)* Keep your hand up if you used spec driven development. *(watch the hands drop)* That drop-off you just saw — that's this talk.
 >
 > Here's the plan for the next 20 minutes: a bit of theory from me — what spec-driven development actually is and why it matters for CAP — and then Abdulbasıt builds a real CAP bookshop application live on stage. Which will either be very impressive or very entertaining. Win-win for you either way.
 
@@ -14,7 +14,7 @@
 
 ## Slide 2 — The Reveal + Emergency Entertainment (0:45 · cum. 1:15)
 
-> Now. Before we start, a confession. I know that at this conference, slides are… let's say, *not the love language*. Code is. So I did what any reasonable developer would do — *(B1: title slide shrinks into a tab, VS Code chrome slides in)* — I built the entire presentation to look like VS Code. Left side file explorer, terminal at the bottom, everything's a markdown file. You're not watching slides. You're *reviewing a repository*. Completely different thing.
+> Now. Before we start, a confession. I know that at this conference, slides are… let's say, *not the love language*. Code is. So I did what any reasonable developer would do — *(B1: title slide shrinks into a tab, VS Code chrome slides in)* — I built the entire presentation to look like VS Code.  You're not watching slides. You're *reviewing a repository*. Completely different thing.
 >
 > And for those of you where it's 4 p.m., the coffee has worn off, and even VS Code is too much right now — I've also prepared some professional-grade distraction. *(B2: Subway Surfer PiP fades in — let it run, say nothing for ~5 seconds, then:)* You're welcome. It'll be back if I see anyone yawning. *(B3: video out)*
 >
@@ -26,7 +26,7 @@
 
 > Let's be honest. Sitting alone in a dark room, tinkering with your code — *(gesture at image)* — that was the best part of this job. And the industry has this unexplained need to destroy everything that's quiet, satisfying, and can actually make you happy.
 >
-> *(B1)* First: pair programming. *(B2)* Then test-driven development — writing tests for code that doesn't exist yet. *(B3)* Then Scrum — standups, refinements, reviews, retros… everything except developing. *(B4)* And now: Spec-Driven Development. And here's the punchline — the one thing developers hate writing more than tests is documentation. So the new hot methodology is: *write the documentation first.*
+> *(B1)* First: pair programming — fighting about one unimportant line of code for eight hours. *(B2)* Then test-driven development — writing tests for code that doesn't exist yet. *(B3)* Then Scrum — standups, refinements, reviews, retros… everything except developing. *(B4)* And now: Spec-Driven Development. And here's the punchline — the one thing developers hate writing more than tests is documentation. So the new hot methodology is: *write the documentation first.*
 >
 > Stay with me. Because unlike the others — this one might actually be fun.
 
@@ -38,9 +38,9 @@
 >
 > *(B2: curve draws up to the peak)* And to be fair — the slot machine pays out! For prototypes, PoCs, to-do apps, the data shows massive speed-ups. This is the Vibe Peak, and it's real.
 >
-> *(B3: curve falls off the cliff, PROBLEMS panel floods — wait a beat)* …and this is what happens when you point the same approach at a real system. Multi-tenancy, draft handling, authorization, an S/4 integration. The 2026 DORA report calls it the Complexity Trough: productivity drops *below* doing it yourself. Because the AI one-shots a hallucination into your codebase in three seconds — and you debug it for three hours.
+> *(B3: curve falls off the cliff, PROBLEMS panel floods — wait a beat)* …and this is what happens when you point the same approach at a real system. Multi-tenancy, draft handling, authorization, an S/4 integration. I call it the Complexity Trough: productivity drops *below* doing it yourself. This isn't a feeling — METR ran a randomized controlled trial: experienced developers on mature codebases were 19% *slower* with AI. And here's the kicker: they *believed* they'd been 20% faster. Because the AI one-shots a hallucination into your codebase in three seconds — and you debug it for three hours.
 >
-> The root cause: English only *feels* precise. 'The app should sync in real time' — lovely. What happens when two users in different time zones delete the same paragraph during a Wi-Fi flicker? *That's* where real engineering lives. And vibes don't cover it.
+> The root cause: English only *feels* precise. 'Customers can order books' — lovely. What happens when two customers order the *last copy* at the same moment — and one request times out mid-transaction? *That's* where real engineering lives. And vibes don't cover it.
 
 ---
 
@@ -60,7 +60,7 @@
 >
 > *(B1: `/constitution` → memory/constitution.md pops in)* Step zero, once per project: the **constitution**. Your team's non-negotiable laws. Everything is CDS, no ORMs. The domain model is never exposed directly. Every service requires a role. No handler without a test. This is the implicit knowledge you normally transfer through three years of code-review pain — made explicit. Every later step is checked against it.
 >
-> *(B2: `/specify` → spec.md pops in)* Then, per feature: **specify**. What and why — user stories, acceptance criteria, edge cases. Deliberately no tech stack yet. This is where you catch the Wi-Fi-flicker questions *before* they're bugs.
+> *(B2: `/specify` → spec.md pops in)* Then, per feature: **specify**. What and why — user stories, acceptance criteria, edge cases. Deliberately no tech stack yet. This is where you catch the last-copy questions *before* they're bugs.
 >
 > *(B3: `/plan` → plan.md pops in)* **Plan**: now the how. Entities, service projections, annotations — and the agent validates its own plan against the constitution. If the plan says 'let's add MongoDB', the constitution says no.
 >
@@ -93,6 +93,8 @@
 ## Closing — Key Takeaways (after demo, ~40 sec, either speaker)
 
 > Four things to take home. *(B1)* Vibes don't scale — great for prototypes, fatal for enterprise. *(B2)* It's the workflow that matters, not the tool — constitution, specify, plan, tasks, implement, with a human gate at every step. *(B3)* CAP is uniquely positioned, because CDS has been a machine-readable spec all along. *(B4)* And finally: notice what stayed human in that demo — understanding the problem, defining the constraints, reviewing the plan. The AI executes the contract. *You* write it. That's not the death of software engineering — that's software engineering with the boring parts delegated. Thank you!
+
+⚠️ *If the demo had to fall back to the prepared repo, swap the opener of takeaway 4: "notice what stayed human — even when the Wi-Fi didn't: understanding the problem, defining the constraints, reviewing the plan."*
 
 ---
 
